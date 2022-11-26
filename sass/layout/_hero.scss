@@ -1,0 +1,63 @@
+.hero {
+  &__text {
+    text-align: center;
+    margin-top: 2rem;
+
+    &--main {
+      font-size: $Fs-h1;
+
+      //600px
+      @include respond(phone) {
+        font-size: $Fs-h1-s;
+      }
+    }
+
+    &--sub {
+      font-size: $Fs-p;
+      width: 50%;
+      margin-inline: auto;
+
+      //900px
+      @include respond(tab-port) {
+        width: 80%;
+      }
+    }
+
+    &--link {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__pic {
+    &--img {
+      width: 70%;
+      margin-inline: auto;
+      display: flex;
+      justify-content: center;
+
+      //900px
+      @include respond(tab-port) {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    &__text {
+      &--main {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    &__text {
+      &--main {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
