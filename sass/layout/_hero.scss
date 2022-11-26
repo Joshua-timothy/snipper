@@ -20,6 +20,10 @@
       //900px
       @include respond(tab-port) {
         width: 80%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -34,10 +38,13 @@
       margin-inline: auto;
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-inline: auto;
 
       //900px
       @include respond(tab-port) {
         width: 90%;
+        margin-inline: auto;
       }
     }
   }

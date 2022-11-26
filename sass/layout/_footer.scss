@@ -5,7 +5,7 @@
 
   @include respond(phone) {
     flex-direction: column;
-    padding-inline: 1.6rem;
+    padding: 1.6rem;
   }
 
   &__text {
